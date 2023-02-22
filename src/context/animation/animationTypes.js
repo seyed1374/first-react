@@ -1,0 +1,1 @@
+export const GET_ANIMATIONS = "GET_ANIMATIONS"

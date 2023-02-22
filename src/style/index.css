@@ -1,0 +1,253 @@
+@import "shit.css";
+
+:root {
+    --first-color: #EA264B;
+    --second-color: #231F20;
+
+    --first-background-color: #FFFFFF;
+    --second-background-color: #F0F1F8;
+    --third-background-color: #FFC100;
+    --forth-background-color: #E5B111;
+
+    --first-font-size: 10px;
+    --first2-font-size: 12px;
+    --second-font-size: 13px;
+    --third-font-size: 14px;
+    --forth-font-size: 15px;
+    --fifth-font-size: 16px;
+    --sixth-font-size: 20px;
+    --seventh-font-size: 24px;
+
+    --first-radius: 16px;
+    --second-radius: 18px;
+    --third-radius: 20px;
+
+    --first-border-color: #D4D4D8;
+
+    --first-text-color: #231F20;
+    --second-text-color: #71717A;
+    --third-text-color: #52525B;
+    --forth-text-color: #878787;
+
+    --first-solid-padding: calc(0.03 * 100vw);
+    --second-solid-padding: calc(0.05 * 100vw);
+
+    --first-shadow: 0 4px 12px #E9E9F3;
+}
+
+@font-face {
+    font-family: "my-font";
+    src: url("../fonts/dana-fanum-regular.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "my-font-demibold";
+    src: url("../fonts/dana-fanum-demibold.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "my-font-bold";
+    src: url("../fonts/dana-fanum-bold.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: "my-font", serif;
+    width: 100%;
+    min-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+* {
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    text-align: inherit;
+    background-color: transparent;
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    font-weight: normal;
+}
+
+*:focus {
+    outline: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: "my-font-demibold", serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+.come-back {
+    padding: var(--first-solid-padding);
+    font-size: var(--first2-font-size);
+    font-family: "my-font-demibold", serif;
+    color: var(--forth-text-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: var(--first-background-color);
+}
+
+.come-back-img {
+    width: 10px;
+    margin-left: 5px;
+}
+
+.ani-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--first-solid-padding);
+    position: fixed;
+    top: 25px;
+    right: 0;
+    left: 0;
+    background: var(--first-background-color);
+    margin-top: 10px;
+}
+
+.ani-header-right-title {
+    font-size: var(--forth-font-size);
+    font-family: "my-font-demibold", serif;
+}
+
+.ani-header-right-desc {
+    font-size: var(--first2-font-size);
+    color: var(--first-border-color);
+    font-family: "my-font-demibold", serif;
+}
+
+.ani-header-left {
+    font-size: var(--first2-font-size);
+    color: var(--forth-text-color);
+    font-family: "my-font-demibold", serif;
+    cursor: pointer;
+}
+
+.ani-header-left-img {
+    width: 10px;
+    margin-left: 5px;
+}
+
+.ani-modal-title {
+    font-size: var(--sixth-font-size);
+    font-family: "my-font-demibold", serif;
+    padding-bottom: 20px;
+}
+
+.ani-modal-rate {
+    font-size: var(--fifth-font-size);
+    font-family: "my-font-demibold", serif;
+    padding-bottom: 15px;
+    display: flex;
+}
+
+.ani-modal-newest {
+    font-size: var(--fifth-font-size);
+    font-family: "my-font-demibold", serif;
+    display: flex;
+}
+
+.ani-modal-mostView {
+    font-size: var(--fifth-font-size);
+    font-family: "my-font-demibold", serif;
+    padding-bottom: 15px;
+    display: flex;
+}
+
+.ani-modal-svg {
+    margin-left: 20px;
+}
+
+.animation-page {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.animation-page2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ani-page {
+    padding: var(--first-solid-padding);
+    width: 50%;
+}
+
+.ani-page-img {
+    border-radius: var(--first-radius);
+    width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+}
+
+.ani-page-name {
+    font-size: var(--second-font-size);
+    font-family: "my-font-demibold", serif;
+}
+
+.ani-page-point {
+    display: flex;
+}
+
+.ani-page-point-img {
+    width: 10px;
+    margin-left: 2px;
+}
+
+.ani-page-point-number {
+    font-size: var(--first2-font-size);
+}
+
+.ani-modal-back {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 5;
+}
+
+.ani-modal {
+    position: fixed;
+    width: 100%;
+    height: 30%;
+    border-top-right-radius: var(--third-radius);
+    border-top-left-radius: var(--third-radius);
+    padding: 35px var(--second-solid-padding) 0 var(--second-solid-padding);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--first-background-color);
+    z-index: 5;
+    animation: modal-open ease 250ms;
+}
+
+@keyframes modal-open {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
